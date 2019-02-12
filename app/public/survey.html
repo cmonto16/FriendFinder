@@ -1,0 +1,203 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12">
+
+        <!-- Current Tables in Use -->
+        <div class="card">
+          <div class="card-header">
+            <h3>Survey Questions</h3>
+          </div>
+          <br><br>
+          <h4>About You</h4>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="inputname">Name(Required)</label>
+                <input type="text" class="form-control" id="inputname" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="inputphone">Link to photo image(Required)</label>
+                <input type="tel" class="form-control" id="inputphone" placeholder="">
+              </div>
+            </form>
+          </div>
+        </div>
+        <h4>Question 1</h4>
+        <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+ <form action="/action_page.php">
+  <select number="cars">
+    <option value="1">1 (strongly disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5 (strongly agree)</option>
+  </select>
+  <br><br>
+</form>
+
+<h4>Question 2</h4>
+<p>Your mind is always buzzing with unexplored ideas and plans.</p>
+<form action="/action_page.php">
+<select number="cars">
+<option value="1">1 (strongly disagree)</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5 (strongly agree)</option>
+</select>
+<br><br>
+</form>
+
+<h4>Question 3</h4>
+<p>Your mind is always buzzing with unexplored ideas and plans.</p>
+<form action="/action_page.php">
+<select number="cars">
+<option value="1">1 (strongly disagree)</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5 (strongly agree)</option>
+</select>
+<br><br>
+</form>
+
+<h4>Question 4</h4>
+<p>Your mind is always buzzing with unexplored ideas and plans.</p>
+<form action="/action_page.php">
+<select number="cars">
+<option value="1">1 (strongly disagree)</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5 (strongly agree)</option>
+</select>
+<br><br>
+</form>
+
+<h4>Question 5</h4>
+<p>Your mind is always buzzing with unexplored ideas and plans.</p>
+<form action="/action_page.php">
+<select number="cars">
+<option value="1">1 (strongly disagree)</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5 (strongly agree)</option>
+</select>
+<br><br>
+</form>
+
+<h4>Question 6</h4>
+<p>Your mind is always buzzing with unexplored ideas and plans.</p>
+<form action="/action_page.php">
+<select number="cars">
+<option value="1">1 (strongly disagree)</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5 (strongly agree)</option>
+</select>
+<br><br>
+</form>
+
+<h4>Question 7</h4>
+<p>Your mind is always buzzing with unexplored ideas and plans.</p>
+<form action="/action_page.php">
+<select number="cars">
+<option value="1">1 (strongly disagree)</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5 (strongly agree)</option>
+</select>
+<br><br>
+</form>
+
+<h4>Question 8</h4>
+<p>Your mind is always buzzing with unexplored ideas and plans.</p>
+<form action="/action_page.php">
+<select number="cars">
+<option value="1">1 (strongly disagree)</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5 (strongly agree)</option>
+</select>
+<br><br>
+</form>
+
+<h4>Question 9</h4>
+<p>Your mind is always buzzing with unexplored ideas and plans.</p>
+<form action="/action_page.php">
+<select number="cars">
+<option value="1">1 (strongly disagree)</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5 (strongly agree)</option>
+</select>
+<br><br>
+</form>
+
+<h4>Question 10</h4>
+<p>Your mind is always buzzing with unexplored ideas and plans.</p>
+<form action="/action_page.php">
+<select number="cars">
+<option value="1">1 (strongly disagree)</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5 (strongly agree)</option>
+</select>
+<br><br>
+</form>
+      </div>
+    </div>
+
+
+    <footer class="footer mt-4">
+      <button id="submitbutton" type="submit" class="btn btn-primary">Submit</button>
+    </footer>
+  </div>
+  <!-- JavaScript goes here -->
+  <script type="text/javascript">
+
+    // Clear the tables on the server and then empty the elements on the client
+    $("#submitbutton").on("click", function () {
+      var name = $("#inputname").val().trim();
+      var image = $("#inputimage").val().trim();
+
+      var newRes = {
+        customerName: name,
+        photoImage: image,
+        scores:[$("#qestion1").val(),$("#qestion2").val()]
+      };
+      
+      $.ajax({ url: "/api/waitlist", method: "POST", data: newRes }).then(function () {
+        $("#waitList").empty();
+        $("#tableList").empty();
+      });
+      return false;
+    });
+
+  </script>
+</body>
+
+</html>
