@@ -1,203 +1,275 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey</title>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Survey</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
 
-  <!-- Latest compiled and minified CSS & JS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-</head>
-
-<body>
-
-  <div class="container">
-
-    <div class="row">
-      <div class="col-lg-12">
-
-        <!-- Current Tables in Use -->
-        <div class="card">
-          <div class="card-header">
-            <h3>Survey Questions</h3>
+  <body>
+    <div class="modal" id="failModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Error</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-          <br><br>
-          <h4>About You</h4>
-          <div class="card-body">
-            <form>
-              <div class="form-group">
-                <label for="inputname">Name(Required)</label>
-                <input type="text" class="form-control" id="inputname" placeholder="">
-              </div>
-              <div class="form-group">
-                <label for="inputphone">Link to photo image(Required)</label>
-                <input type="tel" class="form-control" id="inputphone" placeholder="">
-              </div>
-            </form>
+          <div class="modal-body">
+            <p>
+              The input is incomplete, please fill out all the questions and
+              fields.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
-        <h4>Question 1</h4>
-        <p>Your mind is always buzzing with unexplored ideas and plans.</p>
- <form action="/action_page.php">
-  <select number="cars">
-    <option value="1">1 (strongly disagree)</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5 (strongly agree)</option>
-  </select>
-  <br><br>
-</form>
-
-<h4>Question 2</h4>
-<p>Your mind is always buzzing with unexplored ideas and plans.</p>
-<form action="/action_page.php">
-<select number="cars">
-<option value="1">1 (strongly disagree)</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5 (strongly agree)</option>
-</select>
-<br><br>
-</form>
-
-<h4>Question 3</h4>
-<p>Your mind is always buzzing with unexplored ideas and plans.</p>
-<form action="/action_page.php">
-<select number="cars">
-<option value="1">1 (strongly disagree)</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5 (strongly agree)</option>
-</select>
-<br><br>
-</form>
-
-<h4>Question 4</h4>
-<p>Your mind is always buzzing with unexplored ideas and plans.</p>
-<form action="/action_page.php">
-<select number="cars">
-<option value="1">1 (strongly disagree)</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5 (strongly agree)</option>
-</select>
-<br><br>
-</form>
-
-<h4>Question 5</h4>
-<p>Your mind is always buzzing with unexplored ideas and plans.</p>
-<form action="/action_page.php">
-<select number="cars">
-<option value="1">1 (strongly disagree)</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5 (strongly agree)</option>
-</select>
-<br><br>
-</form>
-
-<h4>Question 6</h4>
-<p>Your mind is always buzzing with unexplored ideas and plans.</p>
-<form action="/action_page.php">
-<select number="cars">
-<option value="1">1 (strongly disagree)</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5 (strongly agree)</option>
-</select>
-<br><br>
-</form>
-
-<h4>Question 7</h4>
-<p>Your mind is always buzzing with unexplored ideas and plans.</p>
-<form action="/action_page.php">
-<select number="cars">
-<option value="1">1 (strongly disagree)</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5 (strongly agree)</option>
-</select>
-<br><br>
-</form>
-
-<h4>Question 8</h4>
-<p>Your mind is always buzzing with unexplored ideas and plans.</p>
-<form action="/action_page.php">
-<select number="cars">
-<option value="1">1 (strongly disagree)</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5 (strongly agree)</option>
-</select>
-<br><br>
-</form>
-
-<h4>Question 9</h4>
-<p>Your mind is always buzzing with unexplored ideas and plans.</p>
-<form action="/action_page.php">
-<select number="cars">
-<option value="1">1 (strongly disagree)</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5 (strongly agree)</option>
-</select>
-<br><br>
-</form>
-
-<h4>Question 10</h4>
-<p>Your mind is always buzzing with unexplored ideas and plans.</p>
-<form action="/action_page.php">
-<select number="cars">
-<option value="1">1 (strongly disagree)</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5 (strongly agree)</option>
-</select>
-<br><br>
-</form>
       </div>
     </div>
+    <div class="modal" id="successModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Your Closest Friend</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p id="closest-name"></p>
+            <img id="closest-img" src="" class="img-thumbnail"/>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- Current Tables in Use -->
+          <div class="card">
+            <div class="card-header">
+              <h3>Survey Questions</h3>
+            </div>
+            <br /><br />
+            <h4>About You</h4>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="inputname">Name(Required)</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputname"
+                    placeholder=""
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="inputimage">Link to photo image(Required)</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="inputimage"
+                    placeholder=""
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <h4>Question 1</h4>
+          <p>You like to get dressed up and go out on the town.</p>
+          <select id="qestion1">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+          </select>
+          <br /><br />
 
+          <h4>Question 2</h4>
+          <p>Your mind is always buzzing with unexplored ideas and plans.</p>
+          <select id="qestion2">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+          </select>
+          <br /><br />
 
-    <footer class="footer mt-4">
-      <button id="submitbutton" type="submit" class="btn btn-primary">Submit</button>
-    </footer>
-  </div>
-  <!-- JavaScript goes here -->
-  <script type="text/javascript">
+          <h4>Question 3</h4>
+          <p>You are the life of the party.</p>
+          <select id="qestion3">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+          </select>
+          <br /><br />
 
-    // Clear the tables on the server and then empty the elements on the client
-    $("#submitbutton").on("click", function () {
-      var name = $("#inputname").val().trim();
-      var image = $("#inputimage").val().trim();
+          <h4>Question 4</h4>
+          <p>Serious conversations make you uncomfortable.</p>
+          <select id="qestion4">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+          </select>
+          <br /><br />
 
-      var newRes = {
-        customerName: name,
-        photoImage: image,
-        scores:[$("#qestion1").val(),$("#qestion2").val()]
-      };
-      
-      $.ajax({ url: "/api/waitlist", method: "POST", data: newRes }).then(function () {
-        $("#waitList").empty();
-        $("#tableList").empty();
+          <h4>Question 5</h4>
+          <p>Working out and staying helthey is a top priority.</p>
+          <select id="qestion5">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+          </select>
+          <br /><br />
+
+          <h4>Question 6</h4>
+          <p>You are laid back and easy going.</p>
+          <select id="qestion6">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+          </select>
+          <br /><br />
+
+          <h4>Question 7</h4>
+          <p>You mostly keep to yourself.</p>
+          <select id="qestion7">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+          </select>
+          <br /><br />
+
+          <h4>Question 8</h4>
+          <p>Like to be outdoors.</p>
+          <select id="qestion8">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+          </select>
+          <br /><br />
+
+          <h4>Question 9</h4>
+          <p>You are open minded to others views.</p>
+          <select id="qestion9">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+          </select>
+          <br /><br />
+
+          <h4>Question 10</h4>
+          <p>Family is important to you.</p>
+          <select id="qestion10">
+            <option value="1">1 (strongly disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (strongly agree)</option>
+          </select>
+          <br /><br />
+        </div>
+      </div>
+
+      <footer class="footer mt-4">
+        <button id="submitbutton" type="submit" class="btn btn-primary">
+          Submit
+        </button>
+      </footer>
+    </div>
+    <!-- JavaScript goes here -->
+    <script type="text/javascript">
+      // Clear the tables on the server and then empty the elements on the client
+      $("#submitbutton").on("click", function() {
+        var name = $("#inputname")
+          .val()
+          .trim();
+        var image = $("#inputimage")
+          .val()
+          .trim();
+
+        var newFriend = {
+          name: name,
+          photo: image,
+          scores: [
+            $("#qestion1").val(),
+            $("#qestion2").val(),
+            $("#qestion3").val(),
+            $("#qestion4").val(),
+            $("#qestion5").val(),
+            $("#qestion6").val(),
+            $("#qestion7").val(),
+            $("#qestion8").val(),
+            $("#qestion9").val(),
+            $("#qestion10").val()
+          ]
+        };
+
+        $.ajax({ url: "/api/friends", method: "POST", data: newFriend })
+          .done(function(data) {
+            $("#closest-name").text(data.name);
+            $("#closest-img").attr("src", data.photo);
+            $("#successModal").modal("show");
+          })
+          .fail(function(err) {
+            $("#failModal").modal("show");
+            console.log(err);
+          });
+        return false;
       });
-      return false;
-    });
-
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
